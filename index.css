@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(0, 195, 255);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 195, 255, 0.934);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-cambio {
+    color: rgb(0, 195, 255);
+}
+
+header {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    margin: 0;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: rgb(0, 195, 255);
+    font-size: 1.7em;
+}
+
+header .container {
+    padding: 5px 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgba(0, 195, 255, 0.671);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: 
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(https://english4kidsonline.com/wp-content/uploads/2021/09/nino-aprende-ingles-en-linea.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button{
+    font-size: 1.5em;
+}
+
+#introduccion .container {
+    text-align: center;
+    padding: 200px 20px; /* Corregido el valor */
+}
+
+#planes-de-estudio {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+    padding: 150px 0; /* Corregido el valor */
+}
+
+#planes-de-estudio .container {
+    padding: 0;
+}
+
+#planes-de-estudio h2{
+    margin: 0;
+    font-size: 3em;
+}
+
+#planes-de-estudio .secciones {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 8%;
+    background-size: cover;
+    background-position: center center;
+}
+
+#planes-de-estudio .secciones:first-child {
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(https://www.civitatis.com/blog/wp-content/uploads/2021/06/avion-volando-atardecer.jpg);
+}
+
+#planes-de-estudio .secciones:nth-child(2) {
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(https://definicion.de/wp-content/uploads/2009/03/examen-1.jpg);
+}
+
+#planes-de-estudio .secciones:nth-child(3) {
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(https://cnnespanol.cnn.com/wp-content/uploads/2015/11/homeoffice-trabajo-desde-la-casa-venetajas-desventajas-no-para-personas-todo-el-mundo-cnnespanol.jpg?quality=100&strip=info);
+}
+
+#consejos {
+    background-image: 
+    url(https://cnnespanol.cnn.com/wp-content/uploads/2015/11/homeoffice-trabajo-desde-la-casa-venetajas-desventajas-no-para-personas-todo-el-mundo-cnnespanol.jpg?quality=100&strip=info);
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 700px) 120px ;
+    text-align: center;
+    padding: 250px 12px; /* Corregido el valor */
+}
+
+#consejos ul{
+    margin: 16px 0px;
+    font-weight:bold;
+}
+
+#empezar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 90vh;
+}
+
+#empezar button{
+    font-size: 1.75em; /* Corregido el valor */
+}
+
+footer {
+    background-color: rgb(230,230,230);
+    margin: 0;
+    color: gray;
+    padding: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end ;
+}
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #introduccion .container{ 
+        display: flex;
+        justify-content: space-evenly;
+        height: 90vh;
+    }
+    #introduccion .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #introduccion .imagen-spacio {
+        background-image:
+            url(https://cnnespanol.cnn.com/wp-content/uploads/2015/11/homeoffice-trabajo-desde-la-casa-venetajas-desventajas-no-para-personas-todo-el-mundo-cnnespanol.jpg?quality=100&strip=info);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #planes-de-estudio .secciones{
+        display: flex;
+        justify-content: center;
+    }
+    #planes-de-estudio p{
+        display: block;
+    }
+    #planes-de-estudio h3{
+        margin: 0;
+    }
+    #planes-de-estudio .planes{
+        padding: 50px;
+    }
+    #consejos {
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+@media (min-width:1200px){
+    #consejos{
+        background-position-x: calc(100vw - 800px);
+    }
+}
